@@ -33,6 +33,12 @@ const userSchema = new Schema({
     enum: ["Activa", "Inactiva"],
     default: "Activa",
   },
+  nit:{
+    type: String,
+    required:true,
+    default:"CF"
+
+  }
 });
 
 

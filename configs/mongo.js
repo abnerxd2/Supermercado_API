@@ -1,5 +1,4 @@
 `use strict`
-import {ensureSuperAdminExists} from "../src/auth/auth.controller.js"
 import mongoose from "mongoose"
 
 export const dbConnection = async () =>{
@@ -20,7 +19,6 @@ export const dbConnection = async () =>{
             console.log("Mongo | open to Database")
         })
 
-        await ensureSuperAdminExists();
 
         mongoose.connection.on("reconnected", () =>{
             console.log("Mongo | connected to MongoDB Service")

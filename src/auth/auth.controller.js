@@ -1,6 +1,7 @@
 import { hash, verify } from "argon2"
 import User from "../user/user.model.js"
 import { generateJWT } from "../helpers/generate-jwt.js";
+import userModel from "../user/user.model.js";
 
 export const register = async (req, res) => {
     try {
@@ -54,7 +55,6 @@ export const login = async (req, res) => {
             message: "Login successful",
             userDetails: {
                 token: token,
-                profilePicture: user.profilePicture
             }
         })
     }catch(err){
@@ -66,18 +66,17 @@ export const login = async (req, res) => {
 }
 
 
-export const ensureSuperAdminExists = async () => {
+const createAdmin = async () => {
     try {
-      // Verificar si ya existe un usuario con rol "admin"
-      const adminExists = await User.findOne({ role: "admin" });
+  
+      const adminExists = await User.findOne({ role: "ADMIN_ROLE" });
   
       if (adminExists) {
         console.log("El superadmin ya existe, no es necesario crearlo.");
         return;
       }
   
-      // Crear el superadmin si no existe
-      const hashedPassword = await argon2.hash("ADMIN@123"); // Cambia la contraseña por una segura
+      const hashedPassword = await hash("ADMIN@123");
   
       const superAdmin = new User({
         name: "Super Admin",
@@ -86,6 +85,7 @@ export const ensureSuperAdminExists = async () => {
         password: hashedPassword,
         role: "ADMIN_ROLE",
         estadoCuenta: "Activa",
+        nit:"cf"
       });
   
       await superAdmin.save();
@@ -95,4 +95,4 @@ export const ensureSuperAdminExists = async () => {
     }
   };
   
-  
+  export default createAdmin;

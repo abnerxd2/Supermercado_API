@@ -3,9 +3,11 @@ import cors from "cors"
 import helmet from "helmet"
 import morgan from "morgan"
 import apiLimiter from "../src/middlewere/rate-limit-validator.js"
-import router from "../src/auth/auth.routes.js"
+import authroutes from "../src/auth/auth.routes.js"
 import { dbConnection } from './mongo.js';
 import { swaggerDocs, swaggerUi } from "./swagger.js"
+import createAdmin from '../src/auth/auth.controller.js';
+import userroutes from "../src/user/user.routes.js"
 
 
 const middlewares = (app) => {
@@ -33,7 +35,8 @@ const middlewares = (app) => {
 
 
 const routes = (app) =>{
-    app.use("/Supermercado/v1/auth", router)
+    app.use("/Supermercado/v1/auth", authroutes)
+    app.use("/Supermercado/v1/user",userroutes)
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 }
 
@@ -49,6 +52,7 @@ const conectarDB = async () => {
 export const initServer = () => {
     const app = express()
     try {
+        createAdmin()
         middlewares(app)
         conectarDB()
         routes(app)
