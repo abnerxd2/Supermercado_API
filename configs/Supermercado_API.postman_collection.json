@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "f940ebf1-7fe7-4298-9daf-d69116a3dc02",
+		"name": "Supermercado_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37641996"
+	},
+	"item": [
+		{
+			"name": "Login/Rejister",
+			"item": []
+		},
+		{
+			"name": "Users",
+			"item": []
+		},
+		{
+			"name": "Products",
+			"item": []
+		},
+		{
+			"name": "cart",
+			"item": []
+		}
+	]
+}
