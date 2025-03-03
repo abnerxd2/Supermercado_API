@@ -4,7 +4,7 @@ import { registerValidator, assignClientRole,loginValidator } from "../middlewer
 
 const router = Router();
 
-// metodo rejistrar
+
 router.post(
     "/register",
     registerValidator, 
