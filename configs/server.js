@@ -7,6 +7,7 @@ import authroutes from "../src/auth/auth.routes.js"
 import { dbConnection } from './mongo.js';
 import { swaggerDocs, swaggerUi } from "./swagger.js"
 import createAdmin from '../src/auth/auth.controller.js';
+import createCategory from "../src/category/category.controller.js"
 import userroutes from "../src/user/user.routes.js"
 
 
@@ -53,6 +54,7 @@ export const initServer = () => {
     const app = express()
     try {
         createAdmin()
+        createCategory()
         middlewares(app)
         conectarDB()
         routes(app)
