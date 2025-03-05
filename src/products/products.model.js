@@ -1,6 +1,6 @@
 import { Schema, model, mongo } from "mongoose";
 
-const productSchema = new Schema({
+const productSchema = Schema({
 
   nameProducto: {
     type: String,
@@ -30,7 +30,11 @@ const productSchema = new Schema({
     type: Number,
     required:true,
 
-  }
+  },
+  ventas: { 
+    type: Number, 
+    default: 0 
+  },
 });
 
 

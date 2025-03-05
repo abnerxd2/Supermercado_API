@@ -14,7 +14,7 @@ export const validateJWT = async (req, res, next) =>{
 
         token = token.replace(/^Bearer\s+/, "");
 
-        const { uid } = jwt.verify(token, process.env.SECRETORPRIVATEKEY)
+        const { uid } = jwt.verify(token, process.env.SECRET_KEY)
         const user = await User.findById(uid)
 
         if(!user){
@@ -24,20 +24,21 @@ export const validateJWT = async (req, res, next) =>{
             })
         }
 
-        if(!user.status){
+        if(!user.estadoCuenta){
             return res.status(400).json({
                 success: false,
                 message: "Usuario fue desactivado previamente"
             })
         }
 
-        req.usuario = user
+        req.usuario = user;
+        console.log("Usuario autenticado:", req.usuario);
         next()
     }catch(err){
         return res.status(500).json({
             success: false,
             message: "Error al validar el token",
             error: err.message
-        })
-    }
+        })
+    }
 }

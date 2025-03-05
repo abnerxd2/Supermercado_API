@@ -6,12 +6,12 @@ const swaggerOptions = {
     swaggerDefinition:{
         openapi: "3.0.0",
         info:{
-            title: "Adoption System API",
+            title: "Supermercasdo API",
             version:"1.0.0",
-            description: "API para sistema de adopción de mascotas",
+            description: "API para sistema de un supermercado",
             contact:{
-                name: "Braulio Echeverria",
-                email: "braulioecheveria@kinal.org.gt"
+                name: "Abner Del Cid ",
+                email: "adelcid-2023336@kinal.edu.gt"
             }
         },
         servers:[

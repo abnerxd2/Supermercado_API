@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "67c7abc6e1c0891fed267360"
+  },
+  "name": "Super Admin",
+  "correoElectronico": "superadmin@correo.com",
+  "username": "superadmin",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$B1cUOai/+d+3YGBmBExJIg$idREFcl7ZC/TOQaAF3ARcuw1ZNPwXrggolqsI9KCe4E",
+  "role": "ADMIN_ROLE",
+  "estadoCuenta": "Activa",
+  "nit": "cf",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7d941d9e9344c0605e387"
+  },
+  "name": "Juan",
+  "surname": "Pérez",
+  "correoElectronico": "juan.perez@email.com",
+  "username": "juanperez",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$b99Ibqt7RCEHs0HMvtSYUg$0Lzi5CIiqoQ9hmENfyl2s6nXbMZTM4BKT+5ZnCE2TP0",
+  "role": "CLIENT_ROLE",
+  "estadoCuenta": "Activa",
+  "nit": "CF123456",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c80395a65011424054ea46"
+  },
+  "name": "Juan",
+  "surname": "Abner",
+  "correoElectronico": "juassn.perez@email.com",
+  "username": "abnerxd2",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$mWhWO7hJAVE4TfRDRKiPMw$xlFmXFw4FerWhI78IR47lUUc4Fw0aEgtUK77nHKGUvQ",
+  "role": "CLIENT_ROLE",
+  "estadoCuenta": "Activa",
+  "nit": "CF123456",
+  "__v": 0
+}]

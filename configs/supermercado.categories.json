@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "60b8f9f2b4b9b1562c41b2e1"
+  },
+  "name": "productosdefault",
+  "description": "Productos sin Categoria especifica ",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "name": "Electrónica",
+  "description": "Categoría para productos electrónicos como teléfonos, computadoras, etc.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "name": "Lácteos",
+  "description": "Productos derivados de la leche como queso, yogurt y mantequilla.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f84947317491f"
+  },
+  "name": "Carnes",
+  "description": "Carnes rojas, blancas y embutidos frescos y congelados.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174920"
+  },
+  "name": "Bebidas",
+  "description": "Bebidas naturales y procesadas, como jugos, refrescos y agua embotellada.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174923"
+  },
+  "name": "Abarrotes",
+  "description": "Productos de despensa como arroz, frijoles, pasta y azúcar.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174924"
+  },
+  "name": "Cuidado Personal",
+  "description": "Productos de higiene personal como shampoo, jabón y pasta dental.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174925"
+  },
+  "name": "Limpieza del Hogar",
+  "description": "Productos de limpieza como detergentes, desinfectantes y esponjas.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174926"
+  },
+  "name": "Mascotas",
+  "description": "Alimentos y accesorios para mascotas.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174927"
+  },
+  "name": "Electrodomésticos",
+  "description": "Pequeños electrodomésticos como licuadoras, cafeteras y planchas.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174921"
+  },
+  "name": "Panadería",
+  "description": "Productos de panadería como pan, galletas y pasteles.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7ef0d868f849473174922"
+  },
+  "name": "Frutas y Verduras",
+  "description": "Variedad de frutas y verduras frescas y orgánicas.",
+  "__v": 0
+}]

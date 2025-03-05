@@ -1,0 +1,495 @@
+[{
+  "_id": {
+    "$oid": "67c7f4687254d866d4fe897f"
+  },
+  "nameProducto": "Audífonos Bluetooth Sony WH-1000XM4",
+  "description": "Audífonos inalámbricos con cancelación de ruido y batería de larga duración.",
+  "precio": 3200,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 30,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4687254d866d4fe897e"
+  },
+  "nameProducto": "Laptop Dell Inspiron 15",
+  "description": "Laptop con procesador Intel Core i5, 8GB RAM y SSD de 256GB.",
+  "precio": 8500,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 15,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4687254d866d4fe8980"
+  },
+  "nameProducto": "Monitor Gamer LG 27'' 144Hz",
+  "description": "Monitor con resolución Full HD y frecuencia de actualización de 144Hz.",
+  "precio": 2800,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 20,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4687254d866d4fe8981"
+  },
+  "nameProducto": "Teclado Mecánico HyperX Alloy FPS",
+  "description": "Teclado mecánico para gaming con switches rojos y retroiluminación RGB.",
+  "precio": 1200,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 40,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4687254d866d4fe897d"
+  },
+  "nameProducto": "Smartphone Samsung Galaxy S21",
+  "description": "Teléfono inteligente con pantalla AMOLED de 6.2 pulgadas y 128GB de almacenamiento.",
+  "precio": 4999.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 25,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe898a"
+  },
+  "nameProducto": "Smart TV LG 55\"",
+  "description": "Televisor 4K con sistema operativo WebOS.",
+  "precio": 750,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 8,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8989"
+  },
+  "nameProducto": "Audífonos Inalámbricos Sony",
+  "description": "Audífonos Bluetooth con cancelación de ruido.",
+  "precio": 199.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 20,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8987"
+  },
+  "nameProducto": "Teléfono Inteligente Samsung",
+  "description": "Smartphone con pantalla AMOLED de 6.5 pulgadas.",
+  "precio": 599.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 15,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8988"
+  },
+  "nameProducto": "Laptop Dell Inspiron",
+  "description": "Laptop con procesador Intel Core i5 y 8GB RAM.",
+  "precio": 899.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 10,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe898b"
+  },
+  "nameProducto": "Mouse Gamer Logitech",
+  "description": "Mouse con sensor óptico y 6 botones programables.",
+  "precio": 49.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 30,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe898e"
+  },
+  "nameProducto": "Reloj Inteligente Apple Watch",
+  "description": "Smartwatch con seguimiento de actividad física.",
+  "precio": 399.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 18,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe898f"
+  },
+  "nameProducto": "Consola PlayStation 5",
+  "description": "Consola de videojuegos de última generación.",
+  "precio": 599.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 10,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8990"
+  },
+  "nameProducto": "Leche Entera Lala",
+  "description": "Leche entera pasteurizada en presentación de 1 litro.",
+  "precio": 2.5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 50,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8991"
+  },
+  "nameProducto": "Yogurt Griego Oikos",
+  "description": "Yogurt griego natural sin azúcar añadido.",
+  "precio": 3.2,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 40,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8992"
+  },
+  "nameProducto": "Queso Cheddar",
+  "description": "Queso cheddar madurado en presentación de 200g.",
+  "precio": 4.5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 30,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8993"
+  },
+  "nameProducto": "Mantequilla Sin Sal",
+  "description": "Mantequilla pura sin sal, ideal para cocinar y hornear.",
+  "precio": 2.8,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 20,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8994"
+  },
+  "nameProducto": "Requesón",
+  "description": "Queso fresco tipo requesón en presentación de 500g.",
+  "precio": 5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 15,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8995"
+  },
+  "nameProducto": "Leche Deslactosada",
+  "description": "Leche deslactosada en presentación de 1 litro.",
+  "precio": 3,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 35,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8996"
+  },
+  "nameProducto": "Helado de Vainilla",
+  "description": "Helado de vainilla artesanal en presentación de 1 litro.",
+  "precio": 7,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 10,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8997"
+  },
+  "nameProducto": "Queso Mozzarella",
+  "description": "Queso mozzarella rallado ideal para pizzas.",
+  "precio": 4.2,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 20,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe8998"
+  },
+  "nameProducto": "Batido de Proteína",
+  "description": "Bebida láctea con alto contenido proteico.",
+  "precio": 6.5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 18,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe898c"
+  },
+  "nameProducto": "Teclado Mecánico Redragon",
+  "description": "Teclado con retroiluminación RGB y switches mecánicos.",
+  "precio": 89.99,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 25,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4707254d866d4fe898d"
+  },
+  "nameProducto": "Tableta Gráfica Wacom",
+  "description": "Tableta digitalizadora para diseño gráfico.",
+  "precio": 150,
+  "category": {
+    "$oid": "67c7ea69e5f468741a6bb317"
+  },
+  "Existencias": "Activa",
+  "catntidad": 12,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89af"
+  },
+  "nameProducto": "Crema para Café",
+  "description": "Crema líquida para café con sabor vainilla.",
+  "precio": 3,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 25,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89ad"
+  },
+  "nameProducto": "Queso Cheddar",
+  "description": "Queso cheddar madurado en presentación de 200g.",
+  "precio": 4.5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 30,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89b1"
+  },
+  "nameProducto": "Leche Deslactosada",
+  "description": "Leche deslactosada en presentación de 1 litro.",
+  "precio": 3,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 35,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89ab"
+  },
+  "nameProducto": "Leche Entera Lala",
+  "description": "Leche entera pasteurizada en presentación de 1 litro.",
+  "precio": 2.5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 50,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89ae"
+  },
+  "nameProducto": "Mantequilla Sin Sal",
+  "description": "Mantequilla pura sin sal, ideal para cocinar y hornear.",
+  "precio": 2.8,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 20,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89ac"
+  },
+  "nameProducto": "Yogurt Griego Oikos",
+  "description": "Yogurt griego natural sin azúcar añadido.",
+  "precio": 3.2,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 40,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89b0"
+  },
+  "nameProducto": "Requesón",
+  "description": "Queso fresco tipo requesón en presentación de 500g.",
+  "precio": 5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 15,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89b4"
+  },
+  "nameProducto": "Batido de Proteína",
+  "description": "Bebida láctea con alto contenido proteico.",
+  "precio": 6.5,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 18,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89b2"
+  },
+  "nameProducto": "Helado de Vainilla",
+  "description": "Helado de vainilla artesanal en presentación de 1 litro.",
+  "precio": 7,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 10,
+  "ventas": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c7f4857254d866d4fe89b3"
+  },
+  "nameProducto": "Queso Mozzarella",
+  "description": "Queso mozzarella rallado ideal para pizzas.",
+  "precio": 4.2,
+  "category": {
+    "$oid": "67c7ef0d868f84947317491e"
+  },
+  "Existencias": "Activa",
+  "catntidad": 20,
+  "ventas": 0,
+  "__v": 0
+}]

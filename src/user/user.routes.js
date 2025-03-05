@@ -1,6 +1,6 @@
 import { Router } from "express";
-import {  listcustomer} from "../user/user.controller.js"; 
-import { validateJWT } from "../middlewere/validate-jwt.js";
+import {  listcustomer, } from "../user/user.controller.js"; 
+import { validateJWT } from "../middlewere/validar-jwt.js";
 import { listcustomers } from "../middlewere/user-validators.js";
 
 const router = Router();

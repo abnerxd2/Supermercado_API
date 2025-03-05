@@ -1,26 +1,365 @@
 {
 	"info": {
-		"_postman_id": "f940ebf1-7fe7-4298-9daf-d69116a3dc02",
+		"_postman_id": "5f2c1b83-bef7-41f7-aebd-73349f942630",
 		"name": "Supermercado_API",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37641996"
 	},
 	"item": [
 		{
 			"name": "Login/Rejister",
-			"item": []
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"superadmin\",\r\n    \"password\":\"ADMIN@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Juan\",\r\n  \"surname\": \"Abner\",\r\n  \"correoElectronico\": \"juassn.perez@email.com\",\r\n  \"username\": \"abnerxd2\",\r\n  \"password\": \"H.k2023@4\",\r\n  \"role\": \"ADMIN_ROLE\",\r\n  \"estadoCuenta\": \"Activa\",\r\n  \"nit\": \"CF123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Users",
-			"item": []
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
 		},
 		{
-			"name": "Products",
-			"item": []
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "eliminarCategoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"categoryIdToDelete\": \"67c7edeb8e7f7e94d9a773d1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/category/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"category",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregarCategoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Lácteos\",\r\n    \"description\": \"Productos derivados de la leche como queso, yogurt y mantequilla.\"\r\n  },\r\n  {\r\n    \"name\": \"Carnes\",\r\n    \"description\": \"Carnes rojas, blancas y embutidos frescos y congelados.\"\r\n  },\r\n  {\r\n    \"name\": \"Bebidas\",\r\n    \"description\": \"Bebidas naturales y procesadas, como jugos, refrescos y agua embotellada.\"\r\n  },\r\n  {\r\n    \"name\": \"Panadería\",\r\n    \"description\": \"Productos de panadería como pan, galletas y pasteles.\"\r\n  },\r\n  {\r\n    \"name\": \"Frutas y Verduras\",\r\n    \"description\": \"Variedad de frutas y verduras frescas y orgánicas.\"\r\n  },\r\n  {\r\n    \"name\": \"Abarrotes\",\r\n    \"description\": \"Productos de despensa como arroz, frijoles, pasta y azúcar.\"\r\n  },\r\n  {\r\n    \"name\": \"Cuidado Personal\",\r\n    \"description\": \"Productos de higiene personal como shampoo, jabón y pasta dental.\"\r\n  },\r\n  {\r\n    \"name\": \"Limpieza del Hogar\",\r\n    \"description\": \"Productos de limpieza como detergentes, desinfectantes y esponjas.\"\r\n  },\r\n  {\r\n    \"name\": \"Mascotas\",\r\n    \"description\": \"Alimentos y accesorios para mascotas.\"\r\n  },\r\n  {\r\n    \"name\": \"Electrodomésticos\",\r\n    \"description\": \"Pequeños electrodomésticos como licuadoras, cafeteras y planchas.\"\r\n  }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/category/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
-			"name": "cart",
-			"item": []
+			"name": "productos",
+			"item": [
+				{
+					"name": "agregarProducto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/product/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/product/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarPorFiltros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/product/filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"product",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "ventas",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "nombre",
+									"value": "audifonos",
+									"disabled": true
+								},
+								{
+									"key": "categoria",
+									"value": "Lácteos",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carrito",
+			"item": [
+				{
+					"name": "carrito",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3YWJjNmUxYzA4OTFmZWQyNjczNjAiLCJpYXQiOjE3NDExNjE1MDMsImV4cCI6MTc0MTE2NTEwM30.dO70ma-3uGmjcgYhGNhsHQDiXVWCV6vf1NfZ4RYnuCQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productId\": \"67c7f4687254d866d4fe897e\",\r\n  \"quantity\": 5\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/car/addcar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"car",
+								"addcar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "New Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M3YWJjNmUxYzA4OTFmZWQyNjczNjAiLCJpYXQiOjE3NDExNjUxNjIsImV4cCI6MTc0MTE2ODc2Mn0.g3xn0SL_4pbUWVJcaggJoByW_izX9f-z8LK-IkFwIgI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartId\":\"67c80875b2ac362a0dfcf14c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/Supermercado/v1/factura/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"Supermercado",
+								"v1",
+								"factura",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
