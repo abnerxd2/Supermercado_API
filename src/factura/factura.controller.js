@@ -2,11 +2,18 @@ import PDFDocument from "pdfkit";
 import Cart from "../carrito/carrito.model.js";
 import Product from "../products/products.model.js";
 import User from "../user/user.model.js";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export const generateInvoice = async (req, res) => {
   try {
     const { cartId } = req.body;
-    const cart = await Cart.findById(cartId).populate("products.product"); // Populate para traer los productos
+    const cart = await Cart.findById(cartId).populate("products.product");
 
     if (!cart) {
       return res.status(404).json({
@@ -17,7 +24,6 @@ export const generateInvoice = async (req, res) => {
 
     // Obtener el usuario actual
     const user = await User.findById(cart.user);
-
     if (!user) {
       return res.status(404).json({
         success: false,
@@ -25,43 +31,58 @@ export const generateInvoice = async (req, res) => {
       });
     }
 
-    // Crear el documento PDF
+    const purchasedProducts = cart.products.map(item => ({
+      product: item.product,
+      quantity: item.quantity
+    }));
+
+
+    for (let item of purchasedProducts) {
+      const product = await Product.findById(item.product);
+      if (product) {
+        product.catntidad -= item.quantity;
+        product.ventas += item.quantity; 
+        
+
+        if (product.catntidad <= 0) {
+          product.catntidad = 0;
+          product.Existencias = "Inactiva";
+        }
+
+        await product.save();
+      }
+    }
+
+    cart.products = [];
+    await cart.save();
+
+
     const doc = new PDFDocument();
     let filename = `Factura_${user.username}_${Date.now()}.pdf`;
-    filename = encodeURIComponent(filename);
+    let filepath = path.join(__dirname, "../factura/", filename);
 
-    // Establecer los encabezados para la descarga del PDF
-    res.setHeader("Content-Type", "application/pdf");
-    res.setHeader(
-      "Content-Disposition",
-      `attachment; filename="${filename}"`
-    );
+    const writeStream = fs.createWriteStream(filepath);
+    doc.pipe(writeStream);
 
-    doc.pipe(res); // Salida del archivo PDF al cliente
-
-    // Título de la factura
+    
     doc.fontSize(18).text("Factura de Compra", { align: "center" });
     doc.moveDown();
 
     // Nombre del usuario
-    doc.fontSize(12).text(`Cliente: ${user.name} ${user.surname}`, {
-      align: "left",
-    });
+    doc.fontSize(12).text(`Cliente: ${user.name} ${user.surname}`, { align: "left" });
     doc.moveDown();
 
     // Detalles de la compra
     doc.fontSize(12).text("Productos Comprados:", { align: "left" });
     doc.moveDown();
 
-    // Iterar sobre los productos en el carrito y calcular los subtotales
     let total = 0;
-    for (let item of cart.products) {
-      const product = await Product.findById(item.product); // Usamos el modelo Product para obtener los detalles del producto
+    for (let item of purchasedProducts) {
+      const product = await Product.findById(item.product);
       if (product) {
-        const subTotal = product.precio * item.quantity; // Calcular el subtotal
+        const subTotal = product.precio * item.quantity;
         total += subTotal;
 
-        // Mostrar detalles del producto
         doc.text(
           `${product.nameProducto} - Cantidad: ${item.quantity} - Subtotal: Q${subTotal.toFixed(2)}`,
           { align: "left" }
@@ -71,9 +92,15 @@ export const generateInvoice = async (req, res) => {
 
     doc.moveDown();
     doc.fontSize(12).text(`Total: Q${total.toFixed(2)}`, { align: "right" });
-
-    // Finalizar y generar el PDF
     doc.end();
+
+    writeStream.on("finish", () => {
+      res.json({
+        success: true,
+        message: "Factura generada exitosamente",
+        filePath: filepath,
+      });
+    });
   } catch (error) {
     res.status(500).json({
       success: false,
