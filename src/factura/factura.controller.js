@@ -59,7 +59,7 @@ export const generateInvoice = async (req, res) => {
 
     const doc = new PDFDocument();
     let filename = `Factura_${user.username}_${Date.now()}.pdf`;
-    let filepath = path.join(__dirname, "../factura/", filename);
+    let filepath = path.join(__dirname, "../products/", filename);
 
     const writeStream = fs.createWriteStream(filepath);
     doc.pipe(writeStream);
